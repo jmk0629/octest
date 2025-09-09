@@ -25,7 +25,9 @@
    - 각 노드가 대응 ignition을 부팅 시점에 참조하도록 설정(ISO/LU/Netboot + HTTP/TFTP/S3 등).
 4) **DNS/LB 검증**  
    - `dig`로 `api`, `api-int`, `*.apps`, `bootstrap`, 각 노드 A/PTR이 올바르게 해석되는지 점검.  
-   - LB 뒤 IP가 기대값과 일치하는지 확인.
+  
+<!-- minor formatting tweak -->
+ - LB 뒤 IP가 기대값과 일치하는지 확인.
 5) **부팅 및 완료 처리**  
    - bootstrap → masters → workers 순으로 네트부팅/ISO부팅.  
    - bootstrap 완료 후 bootstrap 노드 정리.  
